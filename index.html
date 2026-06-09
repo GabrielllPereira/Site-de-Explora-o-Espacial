@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Um site sobre exploração espacial, com galeria, vídeo e uma interação com o usuário." />
+    <title>Exploração Espacial — Missões, Ciência e Curiosidade</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header" id="topo">
+      <div class="container header-inner">
+        <div class="brand" aria-label="Identidade do site">
+          <span class="brand-mark">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Buzz_Aldrin.jpg?width=96"
+              alt="Astronauta"
+              loading="eager"
+              decoding="async"
+            />
+          </span>
+          <div class="brand-text">
+            <strong class="brand-title">Exploração Espacial</strong>
+          </div>
+        </div>
+
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu" data-menu-button>
+          Menu
+        </button>
+
+        <nav class="site-nav" aria-label="Navegação principal">
+          <ul id="menu" class="menu" data-menu>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#missoes">Missões</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#video">Vídeo</a></li>
+            <li><a href="#interacao">Interação</a></li>
+            <li><a href="#fontes">Fontes</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="inicio" aria-label="Introdução">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Do “Blue Marble” às novas missões</h1>
+            <p class="lead">
+              A exploração espacial combina física, engenharia e ciência de dados para entender o Universo e desenvolver tecnologias
+              que impactam o dia a dia. Esta página reúne marcos importantes, uma galeria de imagens, um vídeo e uma interação
+              para você testar.
+            </p>
+            <div class="hero-meta" role="list">
+              <div class="meta" role="listitem">
+                <span class="meta-k">Destaques</span>
+                <span class="meta-v">Apollo • Estação Espacial • Observatórios</span>
+              </div>
+              <div class="meta" role="listitem">
+                <span class="meta-k">Como explorar</span>
+                <span class="meta-v">Role, veja a galeria e teste a calculadora</span>
+              </div>
+              <div class="meta" role="listitem">
+                <span class="meta-k">Créditos</span>
+                <span class="meta-v">Imagens e vídeo com uso livre</span>
+              </div>
+            </div>
+            <div class="hero-actions">
+              <a class="button" href="#interacao">Ver interação</a>
+              <a class="button button-ghost" href="#missoes">Explorar conteúdo</a>
+            </div>
+          </div>
+
+          <figure class="hero-media">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/The%20Earth%20seen%20from%20Apollo%2017.jpg?width=1600"
+              alt="A Terra fotografada pela missão Apollo 17, conhecida como 'Blue Marble'."
+              loading="eager"
+              decoding="async"
+            />
+            <figcaption>
+              Imagem via Wikimedia Commons.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" id="missoes" aria-label="Missões e marcos">
+        <div class="container">
+          <header class="section-header">
+            <h2>Missões e marcos</h2>
+            <p>
+              A seguir estão alguns pontos de referência para entender como chegamos das primeiras órbitas aos observatórios
+              modernos.
+            </p>
+          </header>
+
+          <div class="cards" role="list">
+            <article class="card" role="listitem">
+              <h3>Apollo (1961–1972)</h3>
+              <p>
+                Programa que culminou no primeiro pouso tripulado na Lua (Apollo 11, 1969). Além do marco histórico, trouxe
+                avanços em navegação, materiais e telecomunicações.
+              </p>
+              <ul class="bullets">
+                <li>Objetivo: exploração lunar tripulada</li>
+                <li>Legado: ciência e engenharia de sistemas</li>
+              </ul>
+            </article>
+
+            <article class="card" role="listitem">
+              <h3>ISS (1998–presente)</h3>
+              <p>
+                A Estação Espacial Internacional é um laboratório em microgravidade. Pesquisa em biologia, materiais e física ajuda
+                a testar tecnologias para missões longas.
+              </p>
+              <ul class="bullets">
+                <li>Ambiente: microgravidade</li>
+                <li>Cooperação: vários países/agências</li>
+              </ul>
+            </article>
+
+            <article class="card" role="listitem">
+              <h3>Telescópios espaciais</h3>
+              <p>
+                Observatórios fora da atmosfera evitam distorções e bloqueios em algumas faixas do espectro. Isso melhora a
+                qualidade de dados e permite novos tipos de observação.
+              </p>
+              <ul class="bullets">
+                <li>Vantagem: céu mais “limpo”</li>
+                <li>Resultado: dados mais estáveis</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="galeria" aria-label="Galeria">
+        <div class="container">
+          <header class="section-header">
+            <h2>Galeria</h2>
+            <p>
+              Seleção de imagens relacionadas a missões e observação da Terra.
+            </p>
+          </header>
+
+          <div class="gallery" role="list">
+            <figure class="tile" role="listitem">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Buzz_Aldrin_by_Neil_Armstrong.jpg?width=1200"
+                alt="Astronauta Buzz Aldrin na superfície da Lua durante a missão Apollo 11."
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>Buzz Aldrin na Lua (NASA).</figcaption>
+            </figure>
+
+            <figure class="tile" role="listitem">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/NASA_Apollo_17_Lunar_Roving_Vehicle.jpg?width=1200"
+                alt="Veículo lunar (LRV) usado durante a missão Apollo 17." 
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>LRV do Apollo 17 (NASA).</figcaption>
+            </figure>
+
+            <figure class="tile" role="listitem">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/The%20Blue%20Marble%20%28remastered%29.jpg?width=1200"
+                alt="Imagem da Terra conhecida como 'The Blue Marble' em versão remasterizada." 
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>The Blue Marble (NASA).</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="video" aria-label="Vídeo">
+        <div class="container">
+          <header class="section-header">
+            <h2>Vídeo</h2>
+            <p>
+              Vídeo histórico hospedado no Wikimedia Commons, com imagens da missão Apollo 11.
+            </p>
+          </header>
+
+          <div class="video-frame">
+            <video controls preload="metadata">
+              <source
+                src="https://upload.wikimedia.org/wikipedia/commons/9/98/The_Eagle_Has_Landed_-_The_Flight_of_Apollo_11.webm"
+                type="video/webm"
+              />
+              Seu navegador não suporta a tag de vídeo.
+            </video>
+          </div>
+
+          <p class="fineprint">
+            Dica: se o vídeo não carregar (rede lenta), tente atualizar ou use os links em “Fontes”.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="interacao" aria-label="Interação com o usuário">
+        <div class="container">
+          <header class="section-header">
+            <h2>“Seu peso em outros mundos”</h2>
+            <p>
+              Informe um valor e escolha um corpo celeste. O cálculo usa a gravidade relativa em comparação com a Terra.
+            </p>
+          </header>
+
+          <div class="panel">
+            <form class="form" data-weight-form>
+              <div class="field">
+                <label for="pesoTerra">Seu peso na Terra (kg)</label>
+                <input id="pesoTerra" name="pesoTerra" inputmode="decimal" placeholder="Ex.: 65" required />
+                <small>Use números (ponto ou vírgula).</small>
+              </div>
+
+              <div class="field">
+                <label for="destino">Destino</label>
+                <select id="destino" name="destino" required>
+                  <option value="moon">Lua</option>
+                  <option value="mercury">Mercúrio</option>
+                  <option value="venus">Vênus</option>
+                  <option value="mars">Marte</option>
+                  <option value="jupiter">Júpiter</option>
+                  <option value="saturn">Saturno</option>
+                  <option value="uranus">Urano</option>
+                  <option value="neptune">Netuno</option>
+                </select>
+              </div>
+
+              <div class="form-actions">
+                <button class="button" type="submit">Calcular</button>
+                <button class="button button-ghost" type="button" data-reset>Limpar</button>
+              </div>
+            </form>
+
+            <output class="result" aria-live="polite" data-weight-result>
+              Preencha e clique em “Calcular”.
+            </output>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="fontes" aria-label="Fontes e créditos">
+        <div class="container">
+          <header class="section-header">
+            <h2>Fontes</h2>
+            <p>
+              Abaixo estão algumas referências para consulta e os links diretos das imagens e do vídeo usados nesta página.
+            </p>
+          </header>
+
+          <div class="sources">
+            <div class="source-block">
+              <h3>Leitura</h3>
+              <ul class="links">
+                <li><a href="https://www.nasa.gov/" target="_blank" rel="noreferrer">NASA — Portal oficial</a></li>
+                <li><a href="https://www.nasa.gov/mission/apollo-11/" target="_blank" rel="noreferrer">NASA — Apollo 11</a></li>
+                <li><a href="https://www.nasa.gov/international-space-station/" target="_blank" rel="noreferrer">NASA — ISS</a></li>
+              </ul>
+            </div>
+
+            <div class="source-block">
+              <h3>Mídias (Wikimedia Commons)</h3>
+              <ul class="links">
+                <li><a href="https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg" target="_blank" rel="noreferrer">The Earth seen from Apollo 17 (imagem)</a></li>
+                <li><a href="https://commons.wikimedia.org/wiki/File:Buzz_Aldrin_by_Neil_Armstrong.jpg" target="_blank" rel="noreferrer">Buzz Aldrin by Neil Armstrong (imagem)</a></li>
+                <li><a href="https://commons.wikimedia.org/wiki/File:NASA_Apollo_17_Lunar_Roving_Vehicle.jpg" target="_blank" rel="noreferrer">NASA Apollo 17 Lunar Roving Vehicle (imagem)</a></li>
+                <li><a href="https://commons.wikimedia.org/wiki/File:The_Blue_Marble_(remastered).jpg" target="_blank" rel="noreferrer">The Blue Marble (remastered) (imagem)</a></li>
+                <li><a href="https://commons.wikimedia.org/wiki/File:The_Eagle_Has_Landed_-_The_Flight_of_Apollo_11.webm" target="_blank" rel="noreferrer">The Eagle Has Landed — The Flight of Apollo 11 (vídeo)</a></li>
+              </ul>
+              <p class="fineprint">
+                Observação: as páginas de origem trazem detalhes de autoria e uso.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Projeto acadêmico — Exploração Espacial.</p>
+        <a class="to-top" href="#topo">Voltar ao topo</a>
+      </div>
+    </footer>
+  </body>
+</html>

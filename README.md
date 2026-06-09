@@ -62,9 +62,9 @@ Tornar o aprendizado sobre exploração espacial mais acessível, visual e inter
 
 ## 👨‍💻 Autores
 
-Gabriel Pereira
-Diego de Oliveira
-Kaalilanny de Paula
+* Gabriel Pereira
+* Diego de Oliveira
+* Kaalilanny de Paula
 
 Projeto desenvolvido para fins acadêmicos.
 
